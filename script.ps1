@@ -1,4 +1,3 @@
-write-host "This is my firstGIT project"
-write-host "Updated"
-write-host "latest update"
-write-host "Update at 1.16 AM"
+$disk=Get-PSDrive C
+$freespace=[math]::round($disk,Free/1GB,2)
+write-host "Free space on C drive is $freespace GB"
